@@ -1,4 +1,4 @@
 nodeschool
 ==========
 
-Nodeschool lessons
+[Nodeschool](http://nodeschool.io/) lessons
