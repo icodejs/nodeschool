@@ -1,20 +1,16 @@
 (function () {
     var http = require('http');
+    var bl = require('bl');
     var args = process.argv;
     var url = args[2];
 
     http.get(url, function (res) {
-        // see https://github.com/gyaresu/nodeschool/tree/master/node_modules/bl
-        var result = '';
+        res.pipe(bl(function (err, data) {
+            if (err) return console.error(err);
+            data = data.toString();
+            console.log(data.length);
+            console.log(data);
+        }));
 
-        res.setEncoding('utf8');
-        res.on('data', function (data) {
-            result += data;
-        });
-
-        res.on('end', function () {
-            console.log(result.length);
-            console.log(result);
-        });
     });
 }());
