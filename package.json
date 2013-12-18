@@ -18,6 +18,7 @@
     "url": "https://github.com/icodejs/nodeschool/issues"
   },
   "dependencies": {
-    "bl": "~0.6.0"
+    "bl": "~0.6.0",
+    "through2-map": "~1.2.1"
   }
 }
