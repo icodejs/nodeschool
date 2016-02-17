@@ -19,10 +19,11 @@
   },
   "dependencies": {
     "bl": "~0.6.0",
-    "through2-map": "~1.2.1",
+    "concat-stream": "~1.4.0",
+    "mongodb": "^2.1.7",
     "split": "~0.2.10",
     "through": "~2.3.4",
-    "concat-stream": "~1.4.0",
+    "through2-map": "~1.2.1",
     "websocket-stream": "~0.5.1"
   }
 }
