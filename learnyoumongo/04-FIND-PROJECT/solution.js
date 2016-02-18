@@ -6,7 +6,11 @@
         if (err) throw err;
 
         db.collection('parrots').find({
-          age: { $gt: age }
+            age: { $gt: age }
+        }, {
+            age: 1,
+            name: 1,
+            _id: 0
         }).toArray(function(err, documents) {
             if (err) throw err;
 
