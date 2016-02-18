@@ -1,0 +1,10 @@
+{
+    "extends": "standard",
+    "plugins": [
+        "standard"
+    ],
+    "rules": {
+        "indent": [2, 4],
+        "semi": [2, "always"]
+    }
+}
